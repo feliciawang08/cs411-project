@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\app",
+    "\\app\\base",
+    "\\app\\base\\static",
+    "\\app\\base\\static\\assets",
+    "\\app\\base\\static\\assets\\css",
+    "\\app\\base\\static\\assets\\demo",
+    "\\app\\base\\templates",
+    "\\app\\base\\templates\\includes",
+    "\\app\\base\\templates\\layouts"
+  ],
+  "SelectedNode": "\\app\\base\\templates\\includes\\sidebar.html",
+  "PreviewInSolutionExplorer": false
+}
