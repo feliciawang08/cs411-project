@@ -1,17 +1,13 @@
 {
-  "name": "flask-black-dashboard",
+  "name": "Graduate-Me",
   "mastertemplate": "boilerplate-code-flask-dashboard",
   "version": "1.0.1",
-  "description": "Template project - Flask Boilerplate Code",
+  "description": "Schedule Generator for UIUC Students",
   "repository": {
-      "type": "git",
-      "url": "https://github.com/app-generator/flask-black-dashboard"
+    "type": "git",
+    "url": "https://github.com/feliciawang08/cs411-project"
   },
-  "bugs": {
-      "url": "https://github.com/app-generator/flask-black-dashboard/issues",
-      "email": "support@appseed.us"
-  },
-  "author": "AppSeed App Generator <support@appseed.us> (https://appseed.us)",
+  "author": "Felicia Wang, John Drake, Jerry Guo",
   "engines": {
       "node": ">=10.0.0"
   },
