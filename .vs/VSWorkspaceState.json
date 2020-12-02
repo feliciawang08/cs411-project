@@ -3,12 +3,14 @@
     "",
     "\\app",
     "\\app\\base",
-    "\\app\\base\\static",
     "\\app\\base\\templates",
     "\\app\\base\\templates\\accounts",
-    "\\app\\base\\templates\\includes",
-    "\\app\\home"
+    "\\app\\base\\templates\\layouts",
+    "\\app\\databases",
+    "\\app\\home",
+    "\\app\\home\\templates",
+    "\\nginx"
   ],
-  "SelectedNode": "\\app\\base\\templates\\includes\\sidebar.html",
+  "SelectedNode": "\\run.py",
   "PreviewInSolutionExplorer": false
 }

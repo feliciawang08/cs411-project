@@ -1,4 +1,5 @@
 # -*- encoding: utf-8 -*-
+from flask import Flask
 from flask_migrate import Migrate
 from os import environ
 from sys import exit

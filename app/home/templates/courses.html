@@ -1,0 +1,72 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Course List {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+<div class="col-md-12">
+    <div class="card  card-plain">
+        <div class="card-header">
+            <h4 class="card-title">View Schedules</h4>
+            <p class="category">Click specific schedule for more detail.</p>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table tablesorter" id="schedule_list">
+                    <thead class=" text-primary">
+                        <tr>
+                            <th>
+                                Schedule Name
+                            </th>
+                            <th>
+                                Total CR
+                            </th>
+                            <th>
+
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{data}}
+                    </tbody>
+                </table>
+                <div class="text-center">
+                    <span class="btn btn-sm btn-primary btn_row_below_new" onclick="tableAdd()">Add New</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<p>
+    {{data}}
+</p>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+            function tableAdd() {
+                var table = document.getElementById("schedule_list");
+                var row = table.insertRow(-1);
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                var cell3 = row.insertCell(2);
+                var new_sched = '<a href="#">New Schedule</a>';
+                var del_btn = '<span class="btn btn-sm btn-danger btn_row_delete">Delete</span>';
+                cell1.innerHTML = new_sched;
+                cell2.innerHTML = 0;
+                cell3.innerHTML = del_btn;
+
+            }
+            $(document).on("click", ".btn_row_delete", function (event) {
+                $(this).closest("tr").remove();
+            });
+    </script>
+</head>
+{% endblock javascripts %}
